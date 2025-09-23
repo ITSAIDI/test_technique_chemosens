@@ -11,7 +11,7 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
   _pizzas et tartes semblables à des pizzas viandes et légumes_
   _boissons au cola caféiniques faibles en calories_ ...
 
-- Mixed content types in some categories (common names + scientific names) witch make it unclear. \n
+- Mixed content types in some categories (common names + scientific names) witch make it unclear.  
   Examples :
   _tomates lycopersicum esculentum_,
   _brocoli brassica oleracea var italica_ ...
