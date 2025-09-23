@@ -11,7 +11,7 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
   _pizzas et tartes semblables à des pizzas viandes et légumes_
   _boissons au cola caféiniques faibles en calories_ ...
 
-- Mixed content types in some categories (common names + scientific names) witch make it unclear.
+- Mixed content types in some categories (common names + scientific names) witch make it unclear. \n
   Examples :
   _tomates lycopersicum esculentum_,
   _brocoli brassica oleracea var italica_ ...
@@ -20,3 +20,5 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
   Examples :
   _yaourt, lait de vache, aux fruits_ vs _yaourt aux myrtilles_ -> both are **yogurt**
   _avocat prêt à consommer_ vs _avocats persea americana_ -> both are **avocat**
+
+- A possible solution is clustering similar categories, then choosing authentic names for each cluster.
