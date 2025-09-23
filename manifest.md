@@ -9,12 +9,12 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
 - Very long and detailed categories. <br>
   Examples :<br>
   _pizzas et tartes semblables à des pizzas viandes et légumes_<br>
-  _boissons au cola caféiniques faibles en calories_ ...
+  _boissons au cola caféiniques faibles en calories_
 
 - Mixed content types in some categories (common names + scientific names) witch make it unclear. <br>
   Examples :<br>
   _tomates lycopersicum esculentum_,<br>
-  _brocoli brassica oleracea var italica_ ...
+  _brocoli brassica oleracea var italica_
 
 - Different wording but same meaning, in other words, some categories mean essentially the same thing but are written differently, this create unnecessary categories.<br>
   Examples :<br>
