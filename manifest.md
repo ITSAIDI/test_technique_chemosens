@@ -6,9 +6,9 @@
 
 Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
 
-- Very long and detailed categories
-  Examples :
-  _pizzas et tartes semblables à des pizzas viandes et légumes_
+- Very long and detailed categories. <br>
+  Examples :<br>
+  _pizzas et tartes semblables à des pizzas viandes et légumes_<br>
   _boissons au cola caféiniques faibles en calories_ ...
 
 - Mixed content types in some categories (common names + scientific names) witch make it unclear. <br>
@@ -16,9 +16,9 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
   _tomates lycopersicum esculentum_,<br>
   _brocoli brassica oleracea var italica_ ...
 
-- Different wording but same meaning, in other words, some categories mean essentially the same thing but are written differently, this create unnecessary categories.
-  Examples :
-  _yaourt, lait de vache, aux fruits_ vs _yaourt aux myrtilles_ -> both are **yogurt**
+- Different wording but same meaning, in other words, some categories mean essentially the same thing but are written differently, this create unnecessary categories.<br>
+  Examples :<br>
+  _yaourt, lait de vache, aux fruits_ vs _yaourt aux myrtilles_ -> both are **yogurt** <br>
   _avocat prêt à consommer_ vs _avocats persea americana_ -> both are **avocat**
 
 - A possible solution is clustering similar categories, then choosing authentic names for each cluster.
