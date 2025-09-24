@@ -6,5 +6,13 @@
 - Special characters such as %, ?, etc., are cleaned, and all text is converted to lowercase.
 - Stopwords are eliminated to facilitate keyword extraction and reduce noise in the data.
 - Adjectives or verbs, are not relevant as keywords such as _aromatisée_, _semblables_, and _instantané_ to exclude them we keep only `NOUN` (Common noun) and `PROPN` (Proper noun). For this, we use a `POS` (Part-of-Speech) technique to detect them with a SpaCy model, [fr_dep_news_trf](https://github.com/explosion/spacy-models/releases/tag/fr_dep_news_trf-3.8.0), based on a transformer pipeline, which performs much better than other models in SpaCy for french.
+- The final cleaning step is to remove redundant words in product names or categories.
 
 -> The results of _Data cleaning_ stage are in _data/train_cleaned.xlsx_
+
+# 2.Classification
+
+## 2.1 Keywords based Pre-Selection
+
+- The process works as follows: each product name is split into keywords. If a keyword appears in a category, this one is considered a candidate.
+- Results are in _data/train_with_candidates.xlsx_
