@@ -31,7 +31,7 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
   | produits laitiers | produits laitiers tels que lait, fromage, yaourt, crème et beurre |
   | viandes et préparations | viandes, volailles, charcuteries, fraîches ou transformées |
   | poissons et fruits de mer | poissons et fruits de mer, frais, fumés, en conserve ou surgelés |
-  | fruits et dérivés | fruits frais, secs, en jus ou transformés |
+  | fruits et dérivés | fruits frais, secs ou transformés |
   | légumes et dérivés | légumes frais, secs, en conserve, surgelés ou transformés |
   | snacks | snacks salés ou sucrés comme chips, biscuits, barres et confiseries |
   | plats préparés | repas prêts à consommer comme pizzas, sandwiches, hamburgers, soupes, gratins, pâtes cuites, salades, plats surgelés ou en conserve|
