@@ -21,7 +21,7 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
   _yaourt, lait de vache, aux fruits_ vs _yaourt aux myrtilles_ -> both are **yogurt** <br>
   _avocat prêt à consommer_ vs _avocats persea americana_ -> both are **avocat**
 
-- By locking to the train data, we can define this main categories :
+- By locking to the train data, we can define this main categories : (_data/train.xlsx_)
   | Cleaned Category | Definition |
   |---------------------------------|---------------------------------------------------------------------------------------------|
   | boissons | boissons chaudes ou froides, incluant eau, jus, café, thé, sodas et infusions |
@@ -48,4 +48,4 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
 
 In total 12 incorrect matches from 97 (Accuarcy of 88 %)
 
-- The corrected results (manual correction) are saved in _data/train_grouped_categories.xlsx_
+- The corrected results (manual correction) are saved in _data/train_grouped_categories.xlsx_ (as explained similarity score is between raw category and definition of the corresponding clean category)
