@@ -16,3 +16,5 @@
 
 - The process works as follows: each product name is split into keywords. If a keyword appears in a category, this one is considered a candidate.
 - Results are in _data/train_with_candidates.xlsx_
+- Some products have rare names that do not appear in the categories keywords, so they end up with no candidates.
+- If a product has only one candidate, there is no need for the refinement step, as the predicted category is already determined.
