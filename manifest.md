@@ -48,4 +48,4 @@ Issues with `Catégorie de référence`: (examples are from `data/train.xlsx`)
 
 In total 12 incorrect matches from 97 (Accuarcy of 88 %)
 
-- The results are saved in _data/train_grouped_categories.xlsx_
+- The corrected results (manual correction) are saved in _data/train_grouped_categories.xlsx_
