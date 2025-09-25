@@ -44,16 +44,24 @@ The logic is:
 
 - This approach achieved an **accuracy** of **0.63** on the training data and **0.62** on the test data. The values are very close because both datasets are highly similar.
 
+- Results on test data are in `data/embeddings_approach_test_results.xlsx`
+
 ## 2.4 TF-IDF + SVM approach
 
-The methodology combines **TF-IDF** and **SVM** to classify product names into categories. First, TF-IDF converts the text of product names into numerical vectors that represent the importance of each word relative to all products.
+- The methodology combines **TF-IDF** and **SVM** to classify product names into categories. First, TF-IDF converts the text of product names into numerical vectors that represent the importance of each word relative to all products.
 
-Next, an **SVM (Support Vector Machine)** is trained on these vectors to learn how to separate different categories in the high-dimensional space. Prediction is refined using **Candidate_categories**, which restricts predictions to a plausible subset of categories for each product.
+- Next, an **SVM (Support Vector Machine)** is trained on these vectors to learn how to separate different categories in the high-dimensional space. Prediction is refined using **Candidate_categories**, which restricts predictions to a plausible subset of categories for each product.
 
 - The accuracy on both the training and test sets was low, at **0.31**, compared to the embedding-based approach. Because product names are very short, so word frequency patterns are sparse and not very informative. Unlike embeddings, TF-IDF cannot capture the semantic meaning of words, so similar products with different wording are often misclassified.
 
+- Results on test data are in `data/tfidf_svm_approach_test_results.xlsx`
+
 ## 2.3 LLM approach
 
-We chose **Gemini** because it provides strong performance on semantic understanding tasks, while also offering an easy-to-use API. In addition, the generous free trial limits.
+- We chose **Gemini** because it provides strong performance on semantic understanding tasks, while also offering an easy-to-use API. In addition, the generous free trial limits.
 
-The LLM is prompted with the product name and the candidate categories (or, if no candidates exist, a list of all unique categories). Its response is the appropriate category.
+- The LLM is prompted with the product name and the candidate categories (or, if no candidates exist, a list of all unique categories). Its response is the appropriate category.
+
+- The accuarcy on train data is
+
+- Results on test data are in `data/llm_approach_test_results.xlsx`

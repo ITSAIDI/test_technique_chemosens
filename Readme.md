@@ -37,3 +37,5 @@ uv sync
 - We used the free version of gemini-flash for the LLM approach, then you need first to generate a [GEMINI_API_KEY](https://ai.google.dev/gemini-api/docs/api-key)
 - Add the generated key as envirement variable (`.env`).
 - Now you can explore all the code in `main.ipynb`.
+
+# Run the Docker image
