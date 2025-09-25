@@ -35,3 +35,9 @@ The logic is:
    - If `Candidate_categories` is non-empty → compute the similarity between the embedding of `Product_clean` and the embeddings of each candidate category.
    - If `Candidate_categories` is empty → compute similarity with **all unique categories** from the training set (`Category_clean`).
    - The predicted category is the one with the highest cosine similarity.
+
+### Embeddings model choice
+
+- We relied on an open-source embedding models [leaderboard](https://huggingface.co/spaces/mteb/leaderboard) on Hugging Face. On the leaderboard, we selected the French language and focused only on the STS (Semantic Textual Similarity) task. Sorting by descending performance, we found that the best model was jina-embeddings-v3; however, we encountered unresolved errors during installation. As a result, we chose the second-best model, [bilingual-embedding-large](https://huggingface.co/Lajavaness/bilingual-embedding-large).
+
+<img src="images/image1.png" alt="The leaderboard" width="400"/>
