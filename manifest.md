@@ -23,3 +23,15 @@
 - If a product has only one candidate, there is no need for the refinement step, as the predicted category is already determined.
 
 -> The results are in _data/train_with_candidates.xlsx_
+
+## 2.3 Embeddings model approach
+
+The logic is:
+
+1. **If `Category_predicted` is already filled** (from the keyword rules stage, like _“chocapic poudre”_ → `poudre cacao`), keep it.
+
+2. **If not filled**:
+
+   - If `Candidate_categories` is non-empty → compute the similarity between the embedding of `Product_clean` and the embeddings of each candidate category.
+   - If `Candidate_categories` is empty → compute similarity with **all unique categories** from the training set (`Category_clean`).
+   - The predicted category is the one with the highest cosine similarity.
