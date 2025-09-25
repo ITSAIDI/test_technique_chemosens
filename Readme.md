@@ -27,7 +27,7 @@ git clone https://github.com/ITSAIDI/test_technique_chemosens
 cd test_technique_chemosens
 ```
 
-2. Install dependencies:
+2. Run this command to install dependencies:
 
 ```bash
 uv sync
@@ -36,3 +36,4 @@ uv sync
 - A virtual environment will be created and activated with all project dependencies installed.
 - We used the free version of gemini-flash for the LLM approach, then you need first to generate a [GEMINI_API_KEY](https://ai.google.dev/gemini-api/docs/api-key)
 - Add the generated key as envirement variable (`.env`).
+- Now you can explore all the code in `main.ipynb`.
