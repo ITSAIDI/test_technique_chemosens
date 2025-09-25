@@ -51,3 +51,9 @@ The methodology combines **TF-IDF** and **SVM** to classify product names into c
 Next, an **SVM (Support Vector Machine)** is trained on these vectors to learn how to separate different categories in the high-dimensional space. Prediction is refined using **Candidate_categories**, which restricts predictions to a plausible subset of categories for each product.
 
 - The accuracy on both the training and test sets was low, at **0.31**, compared to the embedding-based approach. Because product names are very short, so word frequency patterns are sparse and not very informative. Unlike embeddings, TF-IDF cannot capture the semantic meaning of words, so similar products with different wording are often misclassified.
+
+## 2.3 LLM approach
+
+We chose **Gemini** because it provides strong performance on semantic understanding tasks, while also offering an easy-to-use API. In addition, the generous free trial limits.
+
+The LLM is prompted with the product name and the candidate categories (or, if no candidates exist, a list of all unique categories). Its response is the appropriate category.
