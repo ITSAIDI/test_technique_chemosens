@@ -42,7 +42,7 @@ The logic is:
 
 <img src="images/image1.png" alt="The leaderboard"/>
 
-- This approach achieved an **accuracy** of **0.63** on the training data and **0.62** on the test data. The values are very close because both datasets are highly similar.
+- This approach achieved an **accuracy** of **0.63** on the training data and **0.61** on the test data. The values are very close because both datasets are highly similar.
 
 - Results on test data are in `data/embeddings_approach_test_results.xlsx`
 
