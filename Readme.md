@@ -10,10 +10,10 @@ Here are the steps to set up your environment to reproduce the results:
 
 - [uv](https://docs.astral.sh/uv/getting-started/) installed
 
-Install uv with `pip`:
+Install uv with `pipx`:
 
 ```bash
-pip install uv
+pipx install uv
 ```
 
 For more installation options go to [uv installation](https://docs.astral.sh/uv/getting-started/installation/)
