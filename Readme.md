@@ -46,7 +46,7 @@ uv run python -m spacy download fr_dep_news_trf
 
 # Run the Docker image
 
-- The Docker image is hosted on Docker Hub, so it must be pulled first.
+- The Docker image is hosted on [Docker Hub](https://hub.docker.com/r/itsaidi/test-technique), so it must be pulled first.
 
 ```bash
 docker pull itsaidi/test-technique:latest
