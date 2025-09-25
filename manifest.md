@@ -40,4 +40,4 @@ The logic is:
 
 - We relied on an open-source embedding models [leaderboard](https://huggingface.co/spaces/mteb/leaderboard) on Hugging Face. On the leaderboard, we selected the French language and focused only on the STS (Semantic Textual Similarity) task. Sorting by descending performance, we found that the best model was jina-embeddings-v3; however, we encountered unresolved errors during installation. As a result, we chose the second-best model, [bilingual-embedding-large](https://huggingface.co/Lajavaness/bilingual-embedding-large).
 
-<img src="images/image1.png" alt="The leaderboard" width="400"/>
+<img src="images/image1.png" alt="The leaderboard" width="800"/>
