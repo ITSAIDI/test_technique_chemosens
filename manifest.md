@@ -22,7 +22,7 @@
 - Some products have rare names that do not appear in the categories keywords, so they end up with no candidates.
 - If a product has only one candidate, there is no need for the refinement step, as the predicted category is already determined.
 
--> The results are in _data/train_with_candidates.xlsx_
+-> The results are in _data/train_with_candidates.xlsx_ and _data/test_with_candidates.xlsx_
 
 ## 2.3 Embeddings model approach
 
