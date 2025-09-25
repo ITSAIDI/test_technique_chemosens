@@ -5,9 +5,14 @@ WORKDIR /app
 COPY . .
 
 # Install uv tool
-RUN pipx install uv
+RUN pip install pipx && pipx install uv
 
 # Install dependencies
 RUN uv sync
+RUN uv run python -m spacy download fr_dep_news_trf
 
-# Run the main.ipynb and produce the results on /data folder
+# Install jupyter for notebook execution
+RUN uv run pip install jupyter
+
+# Run the notebook and overwrite main.ipynb with executed version
+CMD ["uv", "run", "jupyter", "nbconvert", "--to", "notebook", "--execute", "--inplace", "main.ipynb"]
