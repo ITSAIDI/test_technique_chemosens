@@ -45,3 +45,24 @@ uv run python -m spacy download fr_dep_news_trf
 - Now you can explore all the code in `main.ipynb`.
 
 # Run the Docker image
+
+- The Docker image is hosted on Docker Hub, so it must be pulled first.
+
+```bash
+docker pull itsaidi/test-technique:latest
+```
+
+- Start a container from the Docker image you pulled
+
+```bash
+docker run -d --name my-container itsaidi/test-technique:latest
+```
+
+- The container will execute all cells in `main.ipynb`, producing the results of three approaches on the test data as Excel files in the `/data` folder. To copy this folder to your local file system:
+
+```bash
+docker cp my-container:/app/data /path/on/host/data
+```
+
+- `my-container:/app/data` → path inside the container.
+- `/path/on/host/data` → where you want it locally.
