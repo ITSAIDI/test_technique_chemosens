@@ -43,3 +43,11 @@ The logic is:
 <img src="images/image1.png" alt="The leaderboard"/>
 
 - This approach achieved an **accuracy** of **0.63** on the training data and **0.62** on the test data. The values are very close because both datasets are highly similar.
+
+## 2.4 TF-IDF + SVM approach
+
+The methodology combines **TF-IDF** and **SVM** to classify product names into categories. First, TF-IDF converts the text of product names into numerical vectors that represent the importance of each word relative to all products.
+
+Next, an **SVM (Support Vector Machine)** is trained on these vectors to learn how to separate different categories in the high-dimensional space. Prediction is refined using **Candidate_categories**, which restricts predictions to a plausible subset of categories for each product.
+
+- The accuracy on both the training and test sets was low, at **0.31**, compared to the embedding-based approach. Because product names are very short, so word frequency patterns are sparse and not very informative. Unlike embeddings, TF-IDF cannot capture the semantic meaning of words, so similar products with different wording are often misclassified.
