@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . .
 
 # Install uv tool
-RUN pip install pipx && pipx install uv
+RUN pip install uv
 
 # Install dependencies
 RUN uv sync
